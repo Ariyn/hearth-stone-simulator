@@ -1,11 +1,11 @@
 from ..Minion import Minion
 from ..Decorators import *
 
-@EffectOn
+@Effect("CA")
 def spellPower(self, ownPlayer, ownMinion):
 	ownPlayer.AddSpellDamage(1, minion)
 
-@EffectOff
+@Effect("KM")
 def spellPowerDown(self, ownPlayer, ownMinion):
 	ownPlayer.RemoveSpellDamage(1, minion)
 
